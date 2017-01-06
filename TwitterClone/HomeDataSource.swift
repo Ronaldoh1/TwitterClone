@@ -10,7 +10,7 @@ import LBTAComponents
 
 class HomeDataSource: Datasource {
 
-    let words = ["Ronald", "Miguel", "Christian", "Frank"]
+    let words = ["Ronald Hernandez", "Miguel Alvarez", "Christian Campoz", "Frank Hernandez"]
 
     override func numberOfItems(_ section: Int) -> Int {
         return words.count
