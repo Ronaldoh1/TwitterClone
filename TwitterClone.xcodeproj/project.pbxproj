@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F220B04C1E1F896D00A8FE2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B04B1E1F896D00A8FE2B /* AppDelegate.swift */; };
-		F220B04E1E1F896D00A8FE2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B04D1E1F896D00A8FE2B /* ViewController.swift */; };
-		F220B0511E1F896D00A8FE2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F220B04F1E1F896D00A8FE2B /* Main.storyboard */; };
 		F220B0541E1F896D00A8FE2B /* TwitterClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F220B0521E1F896D00A8FE2B /* TwitterClone.xcdatamodeld */; };
 		F220B0561E1F896D00A8FE2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F220B0551E1F896D00A8FE2B /* Assets.xcassets */; };
 		F220B0591E1F896D00A8FE2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F220B0571E1F896D00A8FE2B /* LaunchScreen.storyboard */; };
 		F220B0641E1F896D00A8FE2B /* TwitterCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B0631E1F896D00A8FE2B /* TwitterCloneTests.swift */; };
+		F220B06F1E1F8B4D00A8FE2B /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B06E1E1F8B4D00A8FE2B /* HomeCollectionViewController.swift */; };
+		F220B0741E1F8FC300A8FE2B /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B0731E1F8FC300A8FE2B /* WordCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +29,6 @@
 /* Begin PBXFileReference section */
 		F220B0481E1F896D00A8FE2B /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220B04B1E1F896D00A8FE2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F220B04D1E1F896D00A8FE2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F220B0501E1F896D00A8FE2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F220B0531E1F896D00A8FE2B /* TwitterClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwitterClone.xcdatamodel; sourceTree = "<group>"; };
 		F220B0551E1F896D00A8FE2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F220B0581E1F896D00A8FE2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +36,8 @@
 		F220B05F1E1F896D00A8FE2B /* TwitterCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220B0631E1F896D00A8FE2B /* TwitterCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneTests.swift; sourceTree = "<group>"; };
 		F220B0651E1F896D00A8FE2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F220B06E1E1F8B4D00A8FE2B /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		F220B0731E1F8FC300A8FE2B /* WordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,10 @@
 		F220B04A1E1F896D00A8FE2B /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				F220B0721E1F8FA300A8FE2B /* Controllers */,
+				F220B0711E1F8F9F00A8FE2B /* Views */,
+				F220B0701E1F8F8700A8FE2B /* Models */,
 				F220B04B1E1F896D00A8FE2B /* AppDelegate.swift */,
-				F220B04D1E1F896D00A8FE2B /* ViewController.swift */,
-				F220B04F1E1F896D00A8FE2B /* Main.storyboard */,
 				F220B0551E1F896D00A8FE2B /* Assets.xcassets */,
 				F220B0571E1F896D00A8FE2B /* LaunchScreen.storyboard */,
 				F220B05A1E1F896D00A8FE2B /* Info.plist */,
@@ -97,6 +98,29 @@
 				F220B0651E1F896D00A8FE2B /* Info.plist */,
 			);
 			path = TwitterCloneTests;
+			sourceTree = "<group>";
+		};
+		F220B0701E1F8F8700A8FE2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F220B0711E1F8F9F00A8FE2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F220B0731E1F8FC300A8FE2B /* WordCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F220B0721E1F8FA300A8FE2B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F220B06E1E1F8B4D00A8FE2B /* HomeCollectionViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +208,6 @@
 			files = (
 				F220B0591E1F896D00A8FE2B /* LaunchScreen.storyboard in Resources */,
 				F220B0561E1F896D00A8FE2B /* Assets.xcassets in Resources */,
-				F220B0511E1F896D00A8FE2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F220B0541E1F896D00A8FE2B /* TwitterClone.xcdatamodeld in Sources */,
-				F220B04E1E1F896D00A8FE2B /* ViewController.swift in Sources */,
+				F220B0741E1F8FC300A8FE2B /* WordCell.swift in Sources */,
+				F220B06F1E1F8B4D00A8FE2B /* HomeCollectionViewController.swift in Sources */,
 				F220B04C1E1F896D00A8FE2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,14 +251,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F220B04F1E1F896D00A8FE2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F220B0501E1F896D00A8FE2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F220B0571E1F896D00A8FE2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
