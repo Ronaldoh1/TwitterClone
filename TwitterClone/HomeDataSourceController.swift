@@ -13,7 +13,7 @@ class HomeDataSourceController: DatasourceController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView?.backgroundColor = .red
+       
 
         let homeDataSource = HomeDataSource()
         self.datasource = homeDataSource
@@ -29,4 +29,9 @@ class HomeDataSourceController: DatasourceController {
     }
     
 
+    //MARK: UICollectionViewDelegateFlowLayout 
+
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 150)
+    }
 }
