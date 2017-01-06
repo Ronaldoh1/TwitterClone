@@ -44,6 +44,7 @@ class UserCell: DatasourceCell {
         let textView  = UITextView()
         textView.text = "Professional iOS Developer by Day and Night. Love to Play soccer. Go Hoos!"
         textView.font = UIFont.systemFont(ofSize: 14)
+        textView.backgroundColor = .clear
         return textView
     }()
 
