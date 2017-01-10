@@ -21,6 +21,7 @@
 		F220B07B1E1F9BD300A8FE2B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B07A1E1F9BD300A8FE2B /* UserCell.swift */; };
 		F220B07D1E1F9DEB00A8FE2B /* UserHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B07C1E1F9DEB00A8FE2B /* UserHeader.swift */; };
 		F220B07F1E1F9F2700A8FE2B /* UserFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220B07E1E1F9F2700A8FE2B /* UserFooter.swift */; };
+		F2E49C101E24FE1D00E18C8C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E49C0F1E24FE1D00E18C8C /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F220B07A1E1F9BD300A8FE2B /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		F220B07C1E1F9DEB00A8FE2B /* UserHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHeader.swift; sourceTree = "<group>"; };
 		F220B07E1E1F9F2700A8FE2B /* UserFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserFooter.swift; sourceTree = "<group>"; };
+		F2E49C0F1E24FE1D00E18C8C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FB567766BFF58F81801648AC /* Pods-TwitterClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterClone/Pods-TwitterClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 		F220B0701E1F8F8700A8FE2B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2E49C0F1E24FE1D00E18C8C /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				F220B04C1E1F896D00A8FE2B /* AppDelegate.swift in Sources */,
 				F220B07D1E1F9DEB00A8FE2B /* UserHeader.swift in Sources */,
 				F220B0761E1F998600A8FE2B /* HomeDataSourceController.swift in Sources */,
+				F2E49C101E24FE1D00E18C8C /* User.swift in Sources */,
 				F220B07B1E1F9BD300A8FE2B /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

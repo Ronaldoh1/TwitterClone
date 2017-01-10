@@ -12,7 +12,13 @@ class UserCell: DatasourceCell {
 
     override var datasourceItem: Any? {
         didSet{
-            nameLabel.text = datasourceItem as? String
+            guard let user = datasourceItem as? User else {
+                return
+            }
+                nameLabel.text = user.name
+                usernameLabel.text = user.username
+                bioTextView.text = user.bioText
+                profileImageView.image = user.profileImage
         }
     }
 
@@ -66,6 +72,8 @@ class UserCell: DatasourceCell {
     override func setupViews() {
         super.setupViews()
 
+        separatorLineView.isHidden = false
+        separatorLineView.backgroundColor = UIColor(r: 230, g: 230, b: 230)
 
         addSubview(nameLabel)
         addSubview(profileImageView)
