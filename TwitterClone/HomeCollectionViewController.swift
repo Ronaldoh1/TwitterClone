@@ -35,7 +35,11 @@ class HomeCollectionViewController: UICollectionViewController, UICollectionView
     //        return 1
     //    }
 
+    // Remove the additional gaps between cells.
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
         return 4
